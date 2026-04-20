@@ -11,7 +11,7 @@ Nov 13 04:12:01 server sshd[1234]: Failed password for root from 185.220.101.45 
 Nov 13 04:12:01 server sshd[1234]: Failed password for invalid user admin from 185.220.101.45 port 54322 ssh2
 ```
 
-This tool reads those logs, groups failures by attacker IP, classifies severity, and flags any IPs that eventually succeeded — meaning a breach occurred.
+This tool reads those logs, groups failures by attacker IP, classifies severity, and flags any IPs that eventually succeeded meaning a breach occurred.
 
 ## Quick Start
 
@@ -112,7 +112,7 @@ hydra -l root -P /usr/share/wordlists/rockyou.txt ssh://<target-ip>
 python detector.py /var/log/auth.log
 ```
 
-This lets you see your own attack reflected in the logs — a great way to understand both offensive and defensive perspectives.
+This lets you see your own attack reflected in the logs a great way to understand both offensive and defensive perspectives.
 
 ## Legal Notice
 
